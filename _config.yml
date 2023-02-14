@@ -7,7 +7,7 @@ baseurl: # the subpath of the site
 url: http://icescat.github.io/catbook # the base hostname & protocol for your site
 
 permalink: /:year-:month/:title
-timezone:
+timezone: Asia/Shanghai
 
 favicon: /assets/img/favicon.ico
 
@@ -44,3 +44,4 @@ show_drafts: null
 limit_posts: 0
 future:      false
 unpublished: false
+
