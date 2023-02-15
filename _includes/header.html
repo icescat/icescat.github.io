@@ -40,15 +40,6 @@
       </ul>
       {% endif %}
     </nav>
-     {% for tag in site.tags %}
-      {% capture cat_name %}{{ tag | first }}{% endcapture %}
-      <ul class="nav_list">
-        <li class="nav_item">
-          <a href="{{ site.baseurl }}/tag/{{ cat_name }}" id="aa">{{ cat_name }}
-            ({{ tag| last | size }})</a>
-        </li>
-      </ul>
-      {% endfor %}
   </div>
 
 </header>
