@@ -18,7 +18,8 @@ cusdis:
 
 user:
   name: 喵言喵语
-  pic: /assets/img/cat.jpg
+  #pic: /assets/img/cat.jpg
+  pic: /assets/img/cat.png
   picAlt: "catbook"
   job: 一只喵的自言自语
   aboutme: true # comment this out if you don't need the 'about' page.
