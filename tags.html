@@ -4,14 +4,22 @@ layout: page
 
 <section class="aboutme">
     <div class="post_content">
-        {% for tag in site.tags %}
-      {% capture cat_name %}{{ tag | first }}{% endcapture %}
-      <ul class="nav_list">
-        <li class="nav_item">
-          <a href="{{ site.baseurl }}/tag/{{ cat_name }}" id="aa">{{ cat_name }}
-            ({{ tag| last | size }})</a>
-        </li>
-      </ul>
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
+{% assign vids = tag[1] | sort %}
+ 
+{% if vids != empty %}
+ 
+  <h2 id="{{tag[0] | uri_escape | downcase}}">{{tag[0]}}</H2>
+     <p>
+      {% for p in vids %}
+     <a href="{{ p.url }}">{{ p.title }}</a> <span class="entry-date"><time datetime="{{ p.date | date_to_xmlschema }}" itemprop="datePublished">{{ p.date | date: "%B %d, %Y" }}</time></span>
+     <br />
       {% endfor %}
+    </p>
+  
+{% endif %}
+ 
+{% endfor %}
     </div>
 </section>
