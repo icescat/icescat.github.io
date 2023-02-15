@@ -1,5 +1,5 @@
 
-title: 喵言喵语 #Your awesome title
+title: 喵的梦想乡 #Your awesome title
 email: #youremail@domain.com
 description: 喵的梦想乡 # this means to ignore newlines until "baseurl"
 
@@ -17,10 +17,10 @@ cusdis:
     app_id: #your cusdis app_id
 
 user:
-  name: 灵猫
+  name: 喵言喵语
   pic: /assets/img/cat.jpg
   picAlt: "catbook"
-  job: 嗷呜嗷呜
+  job: 一只喵的自言自语
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
