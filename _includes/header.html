@@ -13,13 +13,11 @@
     <span class="header_mes">{{ site.user.message }}</span>
 
     <nav class="nav">
-      {% if site.user.aboutme %}
       <ul class="nav_list">
         <li class="nav_item">
-          <a href="{{ site.baseurl }}/aboutme.html">关于我</a>
+          <a href="{{ '/' | relative_url }}">首页</a>
         </li>
       </ul>
-      {% endif %}
       {% for category in site.categories %}
       {% capture cat_name %}{{ category | first }}{% endcapture %}
       <ul class="nav_list">
@@ -28,6 +26,13 @@
             ({{ category | last | size }})</a>
         </li>
       </ul>
+      {% if site.user.aboutme %}
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="{{ site.baseurl }}/aboutme.html">关于我</a>
+        </li>
+      </ul>
+      {% endif %}
       {% endfor %}
     </nav>
   </div>
