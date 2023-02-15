@@ -26,6 +26,7 @@
             ({{ category | last | size }})</a>
         </li>
       </ul>
+      {% endfor %}
       {% if site.user.aboutme %}
       <ul class="nav_list">
         <li class="nav_item">
@@ -33,7 +34,6 @@
         </li>
       </ul>
       {% endif %}
-      {% endfor %}
     </nav>
   </div>
 
