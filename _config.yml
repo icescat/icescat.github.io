@@ -1,7 +1,7 @@
 
-title: 灵猫 #Your awesome title
+title: 喵言喵语 #Your awesome title
 email: #youremail@domain.com
-description: 灵猫的Blog # this means to ignore newlines until "baseurl"
+description: 喵的梦想乡 # this means to ignore newlines until "baseurl"
 
 baseurl: # the subpath of the site
 url: http://icescat.github.io/catbook # the base hostname & protocol for your site
