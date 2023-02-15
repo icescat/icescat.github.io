@@ -325,8 +325,7 @@ img {
     box-sizing: border-box;
     height: 7rem;
     width: 7rem;
-    border-radius: 50%;
-
+   
     img {
         @extend .header_circle;
     }
